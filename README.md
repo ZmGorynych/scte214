@@ -1,1 +1,1 @@
-# scte214
+Draft schemas and examples for SCTE 214
