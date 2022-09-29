@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:scte:dash:scte214-extensions" targetNamespace="urn:scte:dash:scte214-extensions" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+<xs:simpleType name="CodecListType">
+	<xs:list itemType="xs:NMTOKEN"/>
+</xs:simpleType>
+
+<xs:attributeGroup name="adaptationSetExtendedAttributes">
+    <xs:attribute name="supplementalCodecs" type="CodecListType" use="optional"/> 
+    <xs:attribute name="supplementalProfiles" type="CodecListType" use="optional"/>
+</xs:attributeGroup>
+
+</xs:schema>
